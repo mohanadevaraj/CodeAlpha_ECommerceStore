@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/products">Products</a>
+            <a href="/cart">Cart</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="message" class="success-message">
+        Item added to cart successfully!
+    </div>
+
+    <h1 class="product-title">Our Products</h1>
+
+    <div class="products-container">
+
+        <!-- Laptop -->
+        <div class="card">
+            <img src="/images/laptop.jpg" alt="Laptop">
+
+            <h3>Gaming Laptop</h3>
+
+            <p>₹59,999</p>
+
+            <a href="/add-to-cart/1">
+    <button>Add To Cart</button>
+</a>
+        </div>
+
+        <!-- Phone -->
+        <div class="card">
+            <img src="/images/phone.jpg" alt="Phone">
+
+            <h3>Smart Phone</h3>
+
+            <p>₹24,999</p>
+
+            <a href="/add-to-cart/2">
+    <button>Add To Cart</button>
+</a>
+        </div>
+
+        <!-- Earbuds -->
+        <div class="card">
+            <img src="/images/earbuds.jpg" alt="Earbuds">
+
+            <h3>Wireless Earbuds</h3>
+
+            <p>₹2,999</p>
+
+            <a href="/add-to-cart/3">
+    <button>Add To Cart</button>
+</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 ShopEase | Developed by Mohana Devaraj
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+function addToCart(productName, price) {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+        name: productName,
+        price: price
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    const msg = document.getElementById("message");
+    msg.innerHTML = "✅ " + productName + " added to cart successfully!";
+    msg.style.display = "block";
+
+    setTimeout(() => {
+        window.location.href = "/cart";
+    }, 1500);
+}
+</script>
+</body>
+</html>

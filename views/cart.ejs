@@ -1,0 +1,68 @@
+<% cart = cart || []; %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">ShopEase</div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/products">Products</a>
+        <a href="/cart">Cart</a>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </div>
+</div>
+
+<div class="cart-container">
+    <h1>Shopping Cart</h1>
+
+    <table class="cart-table">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+
+        <% if(cart.length === 0){ %>
+            <tr>
+                <td colspan="3">Your cart is empty.</td>
+            </tr>
+        <% } %>
+
+        <% let total = 0; %>
+
+        <% cart.forEach(item => { %>
+            <% total += item.price; %>
+
+            <tr>
+                <td><%= item.name %></td>
+                <td>₹<%= item.price %></td>
+                <td>
+                    <a href="/remove/<%= item.id %>">
+    <button class="remove-btn">Remove</button>
+</a>
+                </td>
+            </tr>
+        <% }) %>
+    </table>
+
+    <div class="cart-total">
+        <h2>Total: ₹<%= total %></h2>
+        <a href="/checkout" class="btn">
+            Proceed To Checkout
+        </a>
+    </div>
+</div>
+
+<footer>
+    © 2026 ShopEase | Developed by Mohana Devaraj
+</footer>
+
+</body>
+</html>
