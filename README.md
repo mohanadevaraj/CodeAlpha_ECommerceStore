@@ -106,6 +106,10 @@ CodeAlpha_ECommerceStore/
 
 ![Order Success](screenshots/success.png)
 
+## User Data in MongoDB Atlas
+
+![User Data in MongoDB](screenshots/userdata.png)
+
 ---
 
 ## ⚙️ Installation and Setup
