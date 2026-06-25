@@ -86,13 +86,17 @@ CodeAlpha_ECommerceStore/
 
 ![Shopping Cart](screenshots/cart.png)
 
-### Login Page
-
-![Login Page](screenshots/login.png)
-
 ### Register Page
 
 ![Register Page](screenshots/register.png)
+
+### Registration Success
+
+![Registration Success](screenshots/registrationsuccess.png)
+
+### Login Page
+
+![Login Page](screenshots/login.png)
 
 ### Checkout Page
 
