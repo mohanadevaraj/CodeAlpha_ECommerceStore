@@ -192,13 +192,12 @@ A responsive E-Commerce website developed using:
 ✅ Order Success Page
 ✅ Responsive Design
 
+## License
+
+This project is developed for learning purposes and as part of the **CodeAlpha Full Stack Development Internship**.
 
 ## Installation
 
 ```bash
 npm install
 npm start
-
-## 📜 License
-
-This project is developed for learning purposes and as part of the **CodeAlpha Full Stack Development Internship**.
