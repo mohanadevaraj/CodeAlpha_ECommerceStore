@@ -171,9 +171,7 @@ https://github.com/mohanadevaraj/CodeAlpha_ECommerceStore
 
 ---
 
-## 📜 License
 
-This project is developed for educational and internship purposes.
 # ShopEase - E-Commerce Website
 
 A responsive E-Commerce website developed using:
@@ -194,11 +192,13 @@ A responsive E-Commerce website developed using:
 ✅ Order Success Page
 ✅ Responsive Design
 
-## Screenshots
-(Add screenshots here)
 
 ## Installation
 
 ```bash
 npm install
 npm start
+
+## 📜 License
+
+This project is developed for learning purposes and as part of the **CodeAlpha Full Stack Development Internship**.
